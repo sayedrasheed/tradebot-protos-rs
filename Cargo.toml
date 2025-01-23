@@ -1,0 +1,20 @@
+[package]
+name = "tradebot-protos"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytes = "1.5.0"
+serde = { version = "1.0.123", features = ["derive"] }
+serde_yaml = { version = "0.9.14" }
+prost = "0.12.3"
+prost-helper = "0.6"
+strum = "0.26.1"
+strum_macros = "0.26.1"
+
+[build-dependencies]
+prost-build = "0.12.3"
+prost-build-config = "0.4"
+serde_yaml = { version = "0.9.14" }
